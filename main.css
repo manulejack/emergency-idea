@@ -1,0 +1,184 @@
+body {
+   background-color: #82f0cd;
+    background-image: linear-gradient(160deg, #82f0cd 0%, #30d7d2 100%);
+    background-size: cover; /* Ensures background covers the full area */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    height: 100vh; /* Ensures body takes full height of the viewport */
+    margin: 10px;
+    
+    padding: 10px; /* Remove default padding */
+    text-align: center;
+    font-family: "raleway", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    color: #424242;
+    overflow-x: hidden;
+    
+}
+
+
+#img-logo {
+    width: 200px;
+    animation: moveUpDown 2s ease-in-out infinite;
+    margin-top: 25px;
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0); /* Start position */
+    }
+    50% {
+        transform: translateY(-5px); /* Move up by 5px */
+    }
+    100% {
+        transform: translateY(0); /* End position */
+    }
+}
+
+h1 {
+    font-family: "Bowlby One", "raleway", Helvetica, Arial, sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -0pt;
+    line-height: 1;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    margin-top: 8px;
+}
+
+#paragraphe-chapeau {
+    margin-top: 0px;
+}
+
+
+
+.card {
+    
+    opacity: 1;          /* Initially, it is fully transparent */
+    transform: translateY(0px); 
+    background-color: white;
+    border-radius: 25px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    border-radius: 25px;
+    position: relative; /* Required to make the box-shadow appear correctly */
+    padding: 20px; /* Space for content inside the div */
+
+    
+}
+
+
+
+.hidden {
+    /* display: none; */
+    visibility: hidden;
+    opacity: 0;           /* Fade the card in */
+    transform: translateY(20); 
+
+}
+
+.card h2 {
+    font-family: "Bowlby One", "raleway", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: -0pt;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    color: #30d7d2;
+}
+
+.card h3 {
+    margin-top: 5px;
+    color: #30d7d2;
+    font-family: Arial, sans-serif;
+    font-weight: 100;
+}
+
+
+.buttonIdea {background-image: linear-gradient(to right, #EDE574 0%, #E1F5C4  51%, #EDE574  100%)}
+.buttonIdea {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   font-family: "raleway", Helvetica, Arial, sans-serif;;
+   font-weight: 900;
+   letter-spacing: .2pt;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: #424242;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   border: 0px;
+   cursor: pointer;
+ }
+
+ .buttonIdea:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #3c3c3c;
+   text-decoration: none;
+   transform: scale(0.95);
+   
+ }
+ 
+ .buttonIdea:active {
+    background-image: linear-gradient(to right, #e2da66 0%, #d4ecae  51%, #e5dd6a  100%);
+    box-shadow: 0 0 0px #eee;
+    transform: scale(0.90);
+ }
+
+
+ <!-- HTML !-->
+<button class="button-64" role="button"><span class="text">Button 64</span></button>
+
+/* CSS */
+.button-64 {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button-64:active,
+.button-64:hover {
+  outline: 0;
+}
+
+.button-64 span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.button-64:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .button-64 {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+
